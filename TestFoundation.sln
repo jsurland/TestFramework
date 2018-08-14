@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{D467971E-C695-421F-B1E3-207C18B66318}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebDriverTools", "WebDriverTools\WebDriverTools.csproj", "{04A7830B-9F84-4BF6-81C7-83B522F522DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterfaceDriver", "Foundation\UserInterfaceDriver\UserInterfaceDriver.csproj", "{98C31717-9DA9-4899-9E12-4F4FE007682B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{46821649-6DC2-41B2-BDD9-8088CFF80DB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterfaceTests", "Project\UserInterfaceTests\UserInterfaceTests.csproj", "{150ED242-CB6E-4AB4-A868-1540C2D8FCB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{5070E907-1212-4457-BCAD-EB847464C04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieWarning", "Feature\CookieWarning\CookieWarning.csproj", "{DF868660-B023-4A97-93E9-7213EE16AF56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerSupport", "Feature\CustomerSupport\CustomerSupport.csproj", "{55EA8055-4874-4C84-9DDD-C758E2BCB07C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04A7830B-9F84-4BF6-81C7-83B522F522DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A7830B-9F84-4BF6-81C7-83B522F522DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A7830B-9F84-4BF6-81C7-83B522F522DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A7830B-9F84-4BF6-81C7-83B522F522DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C31717-9DA9-4899-9E12-4F4FE007682B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C31717-9DA9-4899-9E12-4F4FE007682B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C31717-9DA9-4899-9E12-4F4FE007682B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C31717-9DA9-4899-9E12-4F4FE007682B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{150ED242-CB6E-4AB4-A868-1540C2D8FCB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{150ED242-CB6E-4AB4-A868-1540C2D8FCB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{150ED242-CB6E-4AB4-A868-1540C2D8FCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{150ED242-CB6E-4AB4-A868-1540C2D8FCB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF868660-B023-4A97-93E9-7213EE16AF56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF868660-B023-4A97-93E9-7213EE16AF56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF868660-B023-4A97-93E9-7213EE16AF56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF868660-B023-4A97-93E9-7213EE16AF56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55EA8055-4874-4C84-9DDD-C758E2BCB07C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55EA8055-4874-4C84-9DDD-C758E2BCB07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55EA8055-4874-4C84-9DDD-C758E2BCB07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55EA8055-4874-4C84-9DDD-C758E2BCB07C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04A7830B-9F84-4BF6-81C7-83B522F522DA} = {D467971E-C695-421F-B1E3-207C18B66318}
+		{98C31717-9DA9-4899-9E12-4F4FE007682B} = {D467971E-C695-421F-B1E3-207C18B66318}
+		{150ED242-CB6E-4AB4-A868-1540C2D8FCB1} = {46821649-6DC2-41B2-BDD9-8088CFF80DB9}
+		{DF868660-B023-4A97-93E9-7213EE16AF56} = {5070E907-1212-4457-BCAD-EB847464C04C}
+		{55EA8055-4874-4C84-9DDD-C758E2BCB07C} = {5070E907-1212-4457-BCAD-EB847464C04C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B68FF903-9909-4A12-BB44-C2B00DBFC3BF}
+	EndGlobalSection
+EndGlobal

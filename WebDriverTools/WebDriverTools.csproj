@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>Foundation.WebDriverTools</AssemblyName>
+    <RootNamespace>Foundation.WebDriverTools</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.12.1" />
+  </ItemGroup>
+</Project>
