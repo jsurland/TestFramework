@@ -1,4 +1,4 @@
-﻿namespace UserInterfaceSupport
+﻿namespace Foundation.UserInterfaceSupport
 {
     public struct Constants
     {

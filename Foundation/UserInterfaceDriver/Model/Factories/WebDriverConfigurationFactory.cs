@@ -1,6 +1,4 @@
-﻿using WebDrivers.Model;
-
-namespace UserInterfaceSupport.Model.Factories
+﻿namespace Foundation.UserInterfaceSupport.Model.Factories
 {
     public class WebDriverConfigurationFactory
     {

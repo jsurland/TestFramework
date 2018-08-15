@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using SeleniumExtras.WaitHelpers;
 
-namespace WebDriverTools.Application.Services
+namespace Foundation.WebDriverTools.Application.Services
 {
-    public static class IWebElementExtensions
+    public static class WebElementExtensions
     {
         /// <summary>
         /// Checks if the <paramref name="element"/> can be clicked on.

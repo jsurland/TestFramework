@@ -1,12 +1,11 @@
-﻿using CustomerSupport.Application;
+﻿using Feature.CustomerSupport.Application;
+using Feature.CustomerSupport.Test;
+using Foundation.UserInterfaceSupport.Model;
 using NUnit.Framework;
-using OpenQA.Selenium;
-using SimplePageTest;
-using UserInterfaceSupport.Model;
-using UserInterfaceTests.Application;
-using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
+using Project.UserInterfaceTests.Application;
+using Constants = Foundation.UserInterfaceSupport.Constants;
 
-namespace UserInterfaceTests.FlowTests
+namespace Project.UserInterfaceTests.FlowTests
 {
     [Parallelizable]
     [Category("FeatureTest")]
@@ -14,7 +13,7 @@ namespace UserInterfaceTests.FlowTests
     {
         private NavigationService _navigationService;
 
-        public CustomerSupportTest(UserInterfaceSupport.Constants.BrowserType browserType, UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(
+        public CustomerSupportTest(Constants.BrowserType browserType, Constants.OperatingSystem operatingSystem) : base(
             browserType, operatingSystem)
         {
             // The constructor is not a good place to do much.

@@ -1,14 +1,12 @@
 ﻿using System;
+using Foundation.UserInterfaceSupport.Model.Factories;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Remote;
-using UserInterfaceSupport;
-using UserInterfaceSupport.Model;
-using UserInterfaceSupport.Model.Factories;
 
-namespace WebDrivers.Model.Repositories
+namespace Foundation.UserInterfaceSupport.Model.Repositories
 {
     public class BrowserRepository
     {

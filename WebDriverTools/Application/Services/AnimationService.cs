@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace WebDriverTools.Application.Services
+namespace Foundation.WebDriverTools.Application.Services
 {
     public class AnimationService
     {

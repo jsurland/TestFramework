@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Feature.CookieWarning.Application;
+﻿using Feature.CookieWarning.Application;
+using Foundation.UserInterfaceSupport.Model;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using SimplePageTest;
-using UserInterfaceSupport.Model;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
-namespace UserInterfaceTests.Application
+namespace Project.UserInterfaceTests.Application
 {
     class PreparePageService
     {

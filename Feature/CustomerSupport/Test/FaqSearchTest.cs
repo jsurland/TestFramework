@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
+using Foundation.UserInterfaceSupport.Model;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
 using SeleniumExtras.WaitHelpers;
-using UserInterfaceSupport.Model;
 
-namespace CustomerSupport.Application
+namespace Feature.CustomerSupport.Test
 {
     public class FaqSearchTest
     {

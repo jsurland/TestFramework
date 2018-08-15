@@ -1,4 +1,4 @@
-﻿namespace CustomerSupport
+﻿namespace Feature.CustomerSupport
 {
     public struct Constants
     {

@@ -1,8 +1,7 @@
-﻿using NUnit.Framework;
-using WebDrivers;
-using WebDriverTools.Application.Services;
+﻿using Foundation.WebDriverTools.Application.Services;
+using NUnit.Framework;
 
-namespace UserInterfaceSupport.Model
+namespace Foundation.UserInterfaceSupport.Model
 {
     [TestFixture(Constants.BrowserType.FireFox, Constants.OperatingSystem.Windows, Description = "FireFox", Category = "Windows")]
 //    [TestFixture(Constants.BrowserType.Chrome, Constants.OperatingSystem.Windows, Description = "Chrome", Category = "Windows")]

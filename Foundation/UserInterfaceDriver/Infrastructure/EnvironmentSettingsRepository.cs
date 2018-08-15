@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Specialized;
 using System.Configuration;
 
-namespace UserInterfaceSupport.Infrastructure
+namespace Foundation.UserInterfaceSupport.Infrastructure
 {
     public class EnvironmentSettingsRepository
     {

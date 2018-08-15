@@ -1,9 +1,8 @@
 ﻿using System;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using WebDrivers;
 
-namespace UserInterfaceSupport.Infrastructure
+namespace Foundation.UserInterfaceSupport.Infrastructure
 {
     public class InternetExplorerService
     {

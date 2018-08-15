@@ -1,17 +1,16 @@
-﻿using NUnit.Framework;
+﻿using Foundation.UserInterfaceSupport.Model;
+using NUnit.Framework;
 using OpenQA.Selenium;
-using SimplePageTest;
-using UserInterfaceSupport.Model;
-using UserInterfaceTests.Application;
+using Project.UserInterfaceTests.Application;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
-namespace UserInterfaceTests.FlowTests
+namespace Project.UserInterfaceTests.FlowTests
 {
     [Parallelizable]
     [Category("FeatureTest")]
     public class NewsLetterSignupTest : UserInterfaceBase
     {
-        public NewsLetterSignupTest(UserInterfaceSupport.Constants.BrowserType browserType, UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(
+        public NewsLetterSignupTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(
             browserType, operatingSystem)
         {
             // The constructor is not a good place to do much.

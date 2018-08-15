@@ -1,4 +1,4 @@
-﻿namespace SimplePageTest
+﻿namespace Project.UserInterfaceTests
 {
     public struct Constants
     {

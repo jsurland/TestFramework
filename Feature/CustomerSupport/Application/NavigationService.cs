@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Foundation.UserInterfaceSupport.Model;
 using OpenQA.Selenium;
-using UserInterfaceSupport.Model;
 using SeleniumExtras.WaitHelpers;
 
-namespace CustomerSupport.Application
+namespace Feature.CustomerSupport.Application
 {
     public class NavigationService
     {

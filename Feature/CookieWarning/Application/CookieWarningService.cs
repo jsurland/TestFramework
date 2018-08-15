@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium;
-using UserInterfaceSupport.Model;
+﻿using Foundation.UserInterfaceSupport.Model;
+using OpenQA.Selenium;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
 namespace Feature.CookieWarning.Application

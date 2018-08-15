@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Remote;
 
-namespace UserInterfaceSupport.Model
+namespace Foundation.UserInterfaceSupport.Model
 {
     public class WebDriverConfiguration : IDisposable
     {

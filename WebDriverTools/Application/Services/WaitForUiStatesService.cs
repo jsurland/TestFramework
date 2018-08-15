@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
-namespace WebDriverTools.Application.Services
+namespace Foundation.WebDriverTools.Application.Services
 {
     public class WaitForUiStatesService
     {

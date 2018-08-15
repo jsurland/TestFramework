@@ -1,14 +1,13 @@
 ﻿using System;
 using System.IO;
+using Foundation.UserInterfaceSupport.Infrastructure;
+using Foundation.UserInterfaceSupport.Model.Repositories;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using UserInterfaceSupport.Infrastructure;
-using WebDrivers;
-using WebDrivers.Model.Repositories;
 
-namespace UserInterfaceSupport.Model
+namespace Foundation.UserInterfaceSupport.Model
 {
     public abstract class BrowserTestBase : IDisposable
     {

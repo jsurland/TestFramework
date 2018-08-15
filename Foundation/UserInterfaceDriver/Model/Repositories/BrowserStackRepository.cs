@@ -2,13 +2,11 @@
 using System.Reflection;
 using System.Runtime.Remoting;
 using System.Text.RegularExpressions;
+using Foundation.UserInterfaceSupport.Model.Factories;
 using NUnit.Framework;
 using OpenQA.Selenium.Remote;
-using UserInterfaceSupport;
-using UserInterfaceSupport.Model;
-using UserInterfaceSupport.Model.Factories;
 
-namespace WebDrivers.Model.Repositories
+namespace Foundation.UserInterfaceSupport.Model.Repositories
 {
     public class BrowserStackRepository
     {

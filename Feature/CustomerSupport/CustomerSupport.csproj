@@ -60,10 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\FaqSearchTest.cs" />
     <Compile Include="Application\NavigationService.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\FaqSearchTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

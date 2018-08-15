@@ -1,10 +1,8 @@
 ﻿using System;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
 
-namespace WebDriverTools.Application.Services
+namespace Foundation.WebDriverTools.Application.Services
 {
     public class HtmlViewportService
     {
