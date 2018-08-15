@@ -60,36 +60,6 @@ namespace Foundation.WebDriverTools.Application.Services
             return new ReadOnlyCollection<string>(element.GetAttribute("class").Split(' '));
         }
 
-        // TODO Tale med ALP hvorfor denne ikke var så fed.
-        //public static object SetValue(this IWebElement element, string value, bool triggerBlur = false, bool triggerInput = true)
-        //{
-        //    if (element == null)
-        //        throw new ArgumentNullException(nameof(element));
-
-        //    RemoteWebElement remoteElement = element as RemoteWebElement;
-
-        //    if (remoteElement == null)
-        //        throw new ArgumentException("Must be of type " + typeof(RemoteWebElement).FullName, nameof(element));
-
-        //    IJavaScriptExecutor js = (IJavaScriptExecutor)remoteElement.WrappedDriver;
-        //    object result = js.ExecuteScript(
-        //        FormattableString.Invariant($"return arguments[0].value = '{value}';"), element);
-
-        //    if (triggerBlur)
-        //    {
-        //        js.ExecuteScript(
-        //            FormattableString.Invariant($"return arguments[0].blur();"), element);
-        //    }
-
-        //    if (triggerInput)
-        //    {
-        //        js.ExecuteScript(
-        //            FormattableString.Invariant($"arguments[0].dispatchEvent(new Event('input'));"), element);
-        //    }
-
-        //    return result;
-        //}
-
         public static void SetValue(this IWebElement inputElement, string newInputBoxString)
         {
             inputElement.SendKeys(Keys.Control + "a");
