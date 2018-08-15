@@ -10,7 +10,8 @@ namespace Project.UserInterfaceTests.FlowTests
     [Category("FeatureTest")]
     public class NewsLetterSignupTest : UserInterfaceBase
     {
-        public NewsLetterSignupTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(
+        public NewsLetterSignupTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, 
+            Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(
             browserType, operatingSystem)
         {
             // The constructor is not a good place to do much.
