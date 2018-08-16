@@ -1,16 +1,17 @@
-﻿using Foundation.UserInterfaceSupport.Model;
+﻿using Feature.CustomerSupport.Model;
+using Foundation.UserInterfaceSupport.Model;
 using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
 
 namespace Feature.CustomerSupport.Application
 {
-    public class NavigationService
+    public class NavigationService : PageObjects
     {
         private readonly UserInterfaceBase _userInterface;
 
-        public NavigationService(UserInterfaceBase userInterfaceBase)
+        public NavigationService(UserInterfaceBase userInterface) : base(userInterface.WebDriver)
         {
-            _userInterface = userInterfaceBase;
+            _userInterface = userInterface;
         }
 
         public void NavigateToCustomerSupportPage()

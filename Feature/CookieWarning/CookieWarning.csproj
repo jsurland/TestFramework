@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Application\CookieWarningService.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Model\PageObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +72,10 @@
     <ProjectReference Include="..\..\Foundation\UserInterfaceDriver\UserInterfaceDriver.csproj">
       <Project>{98C31717-9DA9-4899-9E12-4F4FE007682B}</Project>
       <Name>UserInterfaceDriver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Project\TestPages\TestPages.csproj">
+      <Project>{517344E6-83ED-45D5-B5BE-77A8ED34B062}</Project>
+      <Name>TestPages</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

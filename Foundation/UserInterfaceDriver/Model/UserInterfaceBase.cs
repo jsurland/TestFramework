@@ -31,7 +31,7 @@ namespace Foundation.UserInterfaceSupport.Model
             HtmlViewportService = new HtmlViewportService(WebDriver);
             WaitForUiStatesService = new WaitForUiStatesService(WebDriver);
         }
-
+         
         public HtmlViewportService HtmlViewportService { get; set; }
         public WaitForUiStatesService WaitForUiStatesService { get; set; }
     }

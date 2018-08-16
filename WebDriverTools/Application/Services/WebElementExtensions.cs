@@ -60,10 +60,14 @@ namespace Foundation.WebDriverTools.Application.Services
             return new ReadOnlyCollection<string>(element.GetAttribute("class").Split(' '));
         }
 
-        public static void SetValue(this IWebElement inputElement, string newInputBoxString)
+        public static void SendKeys(this IWebElement inputElement, string newInputBoxString, bool clearInputFirst = true, IFormatProvider overrideFormatProvider = null)
         {
-            inputElement.SendKeys(Keys.Control + "a");
-            inputElement.SendKeys(newInputBoxString.ToString(CultureInfo.InvariantCulture));
+            if (clearInputFirst)
+                inputElement.SendKeys(Keys.Control + "a");
+            if (overrideFormatProvider == null)
+                overrideFormatProvider = CultureInfo.InvariantCulture;
+
+            inputElement.SendKeys(newInputBoxString.ToString(overrideFormatProvider));
         }
     }
 }

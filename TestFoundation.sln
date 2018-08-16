@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookieWarning", "Feature\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerSupport", "Feature\CustomerSupport\CustomerSupport.csproj", "{55EA8055-4874-4C84-9DDD-C758E2BCB07C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPages", "Project\TestPages\TestPages.csproj", "{517344E6-83ED-45D5-B5BE-77A8ED34B062}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{55EA8055-4874-4C84-9DDD-C758E2BCB07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55EA8055-4874-4C84-9DDD-C758E2BCB07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55EA8055-4874-4C84-9DDD-C758E2BCB07C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517344E6-83ED-45D5-B5BE-77A8ED34B062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517344E6-83ED-45D5-B5BE-77A8ED34B062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517344E6-83ED-45D5-B5BE-77A8ED34B062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517344E6-83ED-45D5-B5BE-77A8ED34B062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{150ED242-CB6E-4AB4-A868-1540C2D8FCB1} = {46821649-6DC2-41B2-BDD9-8088CFF80DB9}
 		{DF868660-B023-4A97-93E9-7213EE16AF56} = {5070E907-1212-4457-BCAD-EB847464C04C}
 		{55EA8055-4874-4C84-9DDD-C758E2BCB07C} = {5070E907-1212-4457-BCAD-EB847464C04C}
+		{517344E6-83ED-45D5-B5BE-77A8ED34B062} = {46821649-6DC2-41B2-BDD9-8088CFF80DB9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B68FF903-9909-4A12-BB44-C2B00DBFC3BF}

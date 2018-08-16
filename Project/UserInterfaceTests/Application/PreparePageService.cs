@@ -18,7 +18,8 @@ namespace Project.UserInterfaceTests.Application
         {
             _userInterface.WebDriver.Navigate().GoToUrl(_userInterface.SiteUri + Constants.ClickTestPages.FrontPageUrl);
             _userInterface.DefaultWait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("region-frontpage")));
-            new CookieWarningService(_userInterface).AcceptCookiesWithoutFail();
+            var test = new CookieWarningService(_userInterface);
+            test.AcceptCookiesWithoutFail();
         }
     }
 }

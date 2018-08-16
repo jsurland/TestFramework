@@ -1,24 +1,25 @@
-﻿using Foundation.UserInterfaceSupport.Model;
+﻿using Feature.CookieWarning.Model;
+using Foundation.UserInterfaceSupport.Model;
+using NUnit.Framework;
 using OpenQA.Selenium;
+using SeleniumExtras.PageObjects;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
 namespace Feature.CookieWarning.Application
 {
-    public class CookieWarningService
+    public class CookieWarningService : PageObjects
     {
         private readonly UserInterfaceBase _userInterface;
 
-        public CookieWarningService(UserInterfaceBase userInterface)
+        public CookieWarningService(UserInterfaceBase userInterface) : base(userInterface.WebDriver)
         {
             _userInterface = userInterface;
         }
 
         public void AcceptCookiesWithoutFail()
         {
-            var cookieButton = _userInterface.DefaultWait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(".cookie-info__content .seen_button")));
-            {
-                cookieButton.Click();
-            }
+            _userInterface.DefaultWait.Until(e => CookieButton.Displayed);
+            CookieButton.Click();
         }
     }
 }

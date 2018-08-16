@@ -1,32 +1,33 @@
 ﻿using System.Globalization;
+using Feature.CustomerSupport.Model;
 using Foundation.UserInterfaceSupport.Model;
+using Foundation.WebDriverTools.Application.Services;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumExtras.WaitHelpers;
 
 namespace Feature.CustomerSupport.Test
 {
-    public class FaqSearchTest
+    public class FaqSearchTest : PageObjects
     {
         private readonly UserInterfaceBase _userInterface;
 
-        public FaqSearchTest(UserInterfaceBase userInterface)
+        public FaqSearchTest(UserInterfaceBase userInterface) : base(userInterface.WebDriver)
         {
             _userInterface = userInterface;
         }
 
         public void SearchForAndFind(string searchString, bool reverseExpectations)
         {
-            var searchBox = _userInterface.DefaultWait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector(".search-input input")));
-            searchBox.Click();
-            Assert.IsNotNull(searchBox, "The search box not found.");
+            _userInterface.DefaultWait.Until(e => SearchBox.Enabled && SearchBox.Displayed);
+            SearchBox.Click();
+            SearchBox.SendKeys(searchString, true);
 
-            searchBox.SendKeys(Keys.Control + "a");
-            searchBox.SendKeys(searchString.ToString(CultureInfo.InvariantCulture));
-            var resultHeader = _userInterface.DefaultWait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(".searchresult h2")));
-            Assert.IsTrue(resultHeader.Text.Contains(searchString));
-            _userInterface.WaitForUiStatesService.WaitForElementCountGreaterThanZero(By.CssSelector(".searchresult .link-list li"), 30);
-            var resultList = _userInterface.WebDriver.FindElements(By.CssSelector(".searchresult .link-list li"));
+            _userInterface.DefaultWait.Until(w => ResultHeader.Displayed);
+            Assert.IsTrue(ResultHeader.Text.Contains(searchString));
+
+            _userInterface.WaitForUiStatesService.WaitForElementCountGreaterThanZero(SearchResultList, 30);
+            var resultList = _userInterface.WebDriver.FindElements(SearchResultList);
             if (reverseExpectations)
             {
                 Assert.IsTrue(resultList.Count == 1, $"FAQ List found too many results. Searchstring was: '{searchString}', Search results was: {resultList.Count}.");
