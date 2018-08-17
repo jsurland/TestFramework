@@ -15,18 +15,12 @@ namespace Feature.CustomerSupport.Model
         {
         }
 
+        // Use PageObjects whenever possible
         [FindsBy(How = How.CssSelector, Using = ".search-input input")]
         [CacheLookup]
         protected IWebElement SearchBox { get; set; }
 
-        [FindsBy(How = How.CssSelector, Using = ".searchresult h2")]
-        [CacheLookup]
-        protected IWebElement ResultHeader { get; set; }
-
-        [FindsBy(How = How.CssSelector, Using = ".contact-box a")]
-        [CacheLookup]
-        protected IWebElement ContactButton { get; set; }
-
+        // Use 'By' when PageObjects are not possible - depends on how you need to write the test
         protected By SearchResultList = By.CssSelector(".searchresult .link-list li"); 
     }
 }

@@ -16,9 +16,9 @@ namespace Feature.CustomerSupport.Application
 
         public void NavigateToCustomerSupportPage()
         {
-            var contactButton = _userInterface.DefaultWait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector(".contact-box a")));
-            _userInterface.HtmlViewportService.ScrollIntoView(contactButton);
-            contactButton.Click();
+            _userInterface.DefaultWait.Until(e => ContactButton.Enabled && ContactButton.Displayed);
+            _userInterface.HtmlViewportService.ScrollIntoView(ContactButton);
+            ContactButton.Click();
         }
 
     }
