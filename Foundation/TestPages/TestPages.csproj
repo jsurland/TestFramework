@@ -7,8 +7,8 @@
     <ProjectGuid>{517344E6-83ED-45D5-B5BE-77A8ED34B062}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestPages</RootNamespace>
-    <AssemblyName>TestPages</AssemblyName>
+    <RootNamespace>Foundation.TestPages</RootNamespace>
+    <AssemblyName>Foundation.TestPages</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

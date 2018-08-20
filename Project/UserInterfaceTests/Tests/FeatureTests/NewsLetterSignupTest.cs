@@ -4,13 +4,14 @@ using OpenQA.Selenium;
 using Project.UserInterfaceTests.Application;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
-namespace Project.UserInterfaceTests.ClickTests
+namespace Project.UserInterfaceTests.Tests.FeatureTests
 {
     [Parallelizable]
-    [Category("ClickTest")]
-    public class PagesClickTest : UserInterfaceBase
+    [Category("FeatureTest")]
+    public class NewsLetterSignupTest : UserInterfaceBase
     {
-        public PagesClickTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(
+        public NewsLetterSignupTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, 
+            Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(
             browserType, operatingSystem)
         {
             // The constructor is not a good place to do much.
@@ -31,27 +32,20 @@ namespace Project.UserInterfaceTests.ClickTests
         [TearDown]
         public void AfterEachTest()
         {
-            
+
         }
 
         [OneTimeTearDown]
         public void OneTimeTearDown()
         {
-            
+
         }
 
         [Test]
-        public void ClickTestFrontPage()
+        public void NewsLetterSignup()
         {
-            WebDriver.Navigate().GoToUrl(SiteUri + Constants.ClickTestPages.FrontPageUrl);
+            WebDriver.Navigate().GoToUrl(SiteUri + Constants.NewsletterSignup.SignupUrl);
             DefaultWait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("region-frontpage")));
-        }
-
-        [Test]
-        public void ClickTestLottoFrontPage()
-        {
-            WebDriver.Navigate().GoToUrl(SiteUri + Constants.ClickTestPages.LottoFrontPageUrl);
-            DefaultWait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("region-lotto")));
         }
     }
 }

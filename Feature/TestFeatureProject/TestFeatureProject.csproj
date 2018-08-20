@@ -65,13 +65,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Foundation\TestPages\TestPages.csproj">
+      <Project>{517344E6-83ED-45D5-B5BE-77A8ED34B062}</Project>
+      <Name>TestPages</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Foundation\UserInterfaceDriver\UserInterfaceDriver.csproj">
       <Project>{98C31717-9DA9-4899-9E12-4F4FE007682B}</Project>
       <Name>UserInterfaceDriver</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Project\TestPages\TestPages.csproj">
-      <Project>{517344E6-83ED-45D5-B5BE-77A8ED34B062}</Project>
-      <Name>TestPages</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\WebDriverTools\WebDriverTools.csproj">
       <Project>{04a7830b-9f84-4bf6-81c7-83b522f522da}</Project>
@@ -80,6 +80,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Applicatoin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,8 +4,7 @@ using Foundation.UserInterfaceSupport.Model;
 using NUnit.Framework;
 using Project.UserInterfaceTests.Application;
 
-
-namespace Project.UserInterfaceTests.FlowTests
+namespace Project.UserInterfaceTests.Tests.FeatureTests
 {
     [Parallelizable]
     [Category("FeatureTest")]

@@ -70,13 +70,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Foundation\TestPages\TestPages.csproj">
+      <Project>{517344E6-83ED-45D5-B5BE-77A8ED34B062}</Project>
+      <Name>TestPages</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Foundation\UserInterfaceDriver\UserInterfaceDriver.csproj">
       <Project>{98C31717-9DA9-4899-9E12-4F4FE007682B}</Project>
       <Name>UserInterfaceDriver</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Project\TestPages\TestPages.csproj">
-      <Project>{517344E6-83ED-45D5-B5BE-77A8ED34B062}</Project>
-      <Name>TestPages</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\WebDriverTools\WebDriverTools.csproj">
       <Project>{04A7830B-9F84-4BF6-81C7-83B522F522DA}</Project>

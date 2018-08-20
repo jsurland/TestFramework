@@ -1,6 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using Foundation.TestPages.Infrastructure;
+using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
-using TestPages.Infrastructure;
 
 namespace Feature.CookieWarning.Model
 {
