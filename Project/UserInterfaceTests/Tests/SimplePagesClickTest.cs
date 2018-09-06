@@ -10,16 +10,19 @@ namespace Project.UserInterfaceTests.Tests
     [Category("ClickTest")]
     public class SimplePagesClickTest : UserInterfaceBase
     {
-        public SimplePagesClickTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(
+        public SimplePagesClickTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem, SimplePagesClickTest simplePagesClickTest) : base(
             browserType, operatingSystem)
         {
             // The constructor is not a good place to do much.
             // Mostly becuase the WebDriver reference is null, at this time.
         }
 
+        private SimplePagesClickService _simplePagesClickService;
+
         [OneTimeSetUp]
         public void OneTimeSetup()
         {
+            _simplePagesClickService = new SimplePagesClickService(this);
         }
 
         [SetUp]

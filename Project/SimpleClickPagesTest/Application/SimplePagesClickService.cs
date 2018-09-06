@@ -6,11 +6,11 @@ using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
 namespace Project.UserInterfaceTests.Tests
 {
-    public class SimplePagesClickTest : PageObjects
+    public class SimplePagesClickService : PageObjects
     {
         private UserInterfaceBase _userInterface;
 
-        public SimplePagesClickTest(UserInterfaceBase userInterface) : base(userInterface.WebDriver)
+        public SimplePagesClickService(UserInterfaceBase userInterface) : base(userInterface.WebDriver)
         {
             _userInterface = userInterface;
         }

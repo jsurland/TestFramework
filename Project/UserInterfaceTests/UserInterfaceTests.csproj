@@ -95,6 +95,10 @@
       <Project>{04A7830B-9F84-4BF6-81C7-83B522F522DA}</Project>
       <Name>WebDriverTools</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SimpleClickPagesTest\SimpleClickPagesTest.csproj">
+      <Project>{13753D20-3439-4DBA-B2CD-ED1973F7CA40}</Project>
+      <Name>SimpleClickPagesTest</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
