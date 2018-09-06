@@ -1,4 +1,4 @@
-﻿using Feature.CustomerSupport.Model;
+﻿using Feature.TestFeatureProject.Model;
 using Foundation.UserInterfaceSupport.Model;
 using Foundation.WebDriverTools.Application.Services;
 using NUnit.Framework;

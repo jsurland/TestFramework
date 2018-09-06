@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Foundation.TestPages.Infrastructure;
+﻿using Foundation.TestPages.Infrastructure;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace Feature.CustomerSupport.Model
+namespace Feature.TestFeatureProject.Model
 {
     public class PageObjects : BaseTestPageObjects
     {

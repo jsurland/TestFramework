@@ -44,6 +44,7 @@ namespace Project.UserInterfaceTests.Tests
         public void ClickTestFrontPage()
         {
             WebDriver.Navigate().GoToUrl(SiteUri + Constants.ClickTestPages.FrontPageUrl);
+
             DefaultWait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("region-frontpage")));
         }
 
