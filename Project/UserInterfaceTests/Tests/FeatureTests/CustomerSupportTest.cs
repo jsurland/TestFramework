@@ -10,7 +10,7 @@ namespace Project.UserInterfaceTests.Tests.FeatureTests
     [Category("FeatureTest")]
     class CustomerSupportTest : UserInterfaceBase
     {
-        private NavigationService _navigationService;
+        private CustomerSupportService _navigationService;
 
         public CustomerSupportTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, 
             Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(browserType, operatingSystem)
@@ -28,7 +28,7 @@ namespace Project.UserInterfaceTests.Tests.FeatureTests
         public void BeforeTests()
         {
             new PreparePageService(this).PreparePage();
-            _navigationService = new NavigationService(this);
+            _navigationService = new CustomerSupportService(this);
         }
 
         [TearDown]

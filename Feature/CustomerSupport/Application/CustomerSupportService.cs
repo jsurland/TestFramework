@@ -5,11 +5,11 @@ using SeleniumExtras.WaitHelpers;
 
 namespace Feature.CustomerSupport.Application
 {
-    public class NavigationService : PageObjects
+    public class CustomerSupportService : PageObjects
     {
         private readonly UserInterfaceBase _userInterface;
 
-        public NavigationService(UserInterfaceBase userInterface) : base(userInterface.WebDriver)
+        public CustomerSupportService(UserInterfaceBase userInterface) : base(userInterface.WebDriver)
         {
             _userInterface = userInterface;
         }

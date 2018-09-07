@@ -60,7 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\NavigationService.cs" />
+    <Compile Include="Application\CustomerSupportService.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Model\PageObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

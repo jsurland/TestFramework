@@ -63,8 +63,7 @@
     <Compile Include="Application\PreparePageService.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Model\PageObjects.cs" />
-    <Compile Include="Tests\SimplePagesClickTest.cs" />
-    <Compile Include="Tests\FeatureTests\NewsLetterSignupTest.cs" />
+    <Compile Include="Tests\FeatureTests\SimplePagesClickTest.cs" />
     <Compile Include="Tests\FeatureTests\CustomerSupportTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -83,6 +82,10 @@
       <Project>{55EA8055-4874-4C84-9DDD-C758E2BCB07C}</Project>
       <Name>CustomerSupport</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\SimpleNavigation\SimpleNavigation.csproj">
+      <Project>{E69F8AD6-52C6-4CED-B766-4B97E98E54EE}</Project>
+      <Name>SimpleNavigation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Foundation\TestPages\TestPages.csproj">
       <Project>{517344E6-83ED-45D5-B5BE-77A8ED34B062}</Project>
       <Name>TestPages</Name>
@@ -94,10 +97,6 @@
     <ProjectReference Include="..\..\WebDriverTools\WebDriverTools.csproj">
       <Project>{04A7830B-9F84-4BF6-81C7-83B522F522DA}</Project>
       <Name>WebDriverTools</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SimpleClickPagesTest\SimpleClickPagesTest.csproj">
-      <Project>{13753D20-3439-4DBA-B2CD-ED1973F7CA40}</Project>
-      <Name>SimpleClickPagesTest</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

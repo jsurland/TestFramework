@@ -79,7 +79,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Applicatoin\" />
+    <Folder Include="Application\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="readme.txt" />

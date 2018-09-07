@@ -1,15 +1,18 @@
-﻿using Foundation.UserInterfaceSupport.Model;
+﻿using Foundation.SimpleNavigation.Application;
+using Foundation.UserInterfaceSupport.Model;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using Project.UserInterfaceTests.Application;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
-namespace Project.UserInterfaceTests.Tests
+namespace Project.UserInterfaceTests.Tests.FeatureTests
 {
     [Parallelizable]
     [Category("ClickTest")]
     public class SimplePagesClickTest : UserInterfaceBase
     {
+        private PageNavigationService _navigationService;
+
         public SimplePagesClickTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem, SimplePagesClickTest simplePagesClickTest) : base(
             browserType, operatingSystem)
         {
@@ -17,12 +20,10 @@ namespace Project.UserInterfaceTests.Tests
             // Mostly becuase the WebDriver reference is null, at this time.
         }
 
-        private SimplePagesClickService _simplePagesClickService;
-
         [OneTimeSetUp]
         public void OneTimeSetup()
         {
-            _simplePagesClickService = new SimplePagesClickService(this);
+            _navigationService = new PageNavigationService(this);
         }
 
         [SetUp]
@@ -44,17 +45,16 @@ namespace Project.UserInterfaceTests.Tests
         }
 
         [Test]
-        public void ClickTestFrontPage()
+        public void ClickTest()
         {
-            WebDriver.Navigate().GoToUrl(SiteUri + Constants.ClickTestPages.FrontPageUrl);
-
-            DefaultWait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("region-frontpage")));
+            _navigationService.GotoFrontPage();
+            _navigationService.GotoLottoPage();
         }
 
         [Test]
         public void ClickTestLottoFrontPage()
         {
-            WebDriver.Navigate().GoToUrl(SiteUri + Constants.ClickTestPages.LottoFrontPageUrl);
+  //          WebDriver.Navigate().GoToUrl(SiteUri + Constants.ClickTestPages.LottoFrontPageUrl);
             DefaultWait.Until(ExpectedConditions.ElementIsVisible(By.ClassName("region-lotto")));
         }
     }
