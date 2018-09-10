@@ -14,19 +14,19 @@ namespace Foundation.SimpleNavigation.Application
             _userInterface = userInterface;
         }
 
-        internal void GoToUrlAndWaitUntilReady(Uri url, IWebElement waitForElement)
+        internal void GoToUrlAndWaitUntilReady(string url, IWebElement waitForElement)
         {
-            _userInterface.WebDriver.Navigate().GoToUrl(url);
+            _userInterface.WebDriver.Navigate().GoToUrl(_userInterface.SiteUri + url);
             _userInterface.DefaultWait.Until(e => waitForElement.Enabled && waitForElement.Displayed);
         }
 
-        internal void GoToUrlAndWaitUntilDisplayed(Uri url, IWebElement waitForElement)
+        internal void GoToUrlAndWaitUntilDisplayed(string url, IWebElement waitForElement)
         {
             _userInterface.WebDriver.Navigate().GoToUrl(url);
             _userInterface.DefaultWait.Until(e => waitForElement.Displayed);
         }
 
-        internal void GoToUrlAndWaitUntilEnabled(Uri url, IWebElement waitForElement)
+        internal void GoToUrlAndWaitUntilEnabled(string url, IWebElement waitForElement)
         {
             _userInterface.WebDriver.Navigate().GoToUrl(url);
             _userInterface.DefaultWait.Until(e => waitForElement.Enabled);

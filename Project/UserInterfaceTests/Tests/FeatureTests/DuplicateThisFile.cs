@@ -8,12 +8,12 @@ namespace Project.UserInterfaceTests.Tests.FeatureTests
 {
     [Parallelizable]
     [Category("FeatureTest")]
-    class CustomerSupportTest : UserInterfaceBase 
+    class DuplicateThisFile : UserInterfaceBase
     {
         private CustomerSupportService _customerSupportService;
 
-        public CustomerSupportTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, 
-            Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(browserType, operatingSystem)
+        protected DuplicateThisFile(Foundation.UserInterfaceSupport.Constants.BrowserType browser, 
+            Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(browser, operatingSystem)
         {
             // The constructor is not a good place to do much.
             // Mostly becuase the WebDriver reference is null, at this time.
@@ -46,7 +46,7 @@ namespace Project.UserInterfaceTests.Tests.FeatureTests
         [Test]
         [TestCase("Lotto", false)]
         [TestCase("DoNotFindThisAdsasfsdf", true)]
-        public void SearchAndFindFaqTopicOnCustomerSupportTest(string searchString, bool reverseExpectations)
+        public void DummyTest(string searchString, bool reverseExpectations)
         {
             _customerSupportService.NavigateToCustomerSupportPage();
             var faqSearchTest = new FaqSearchTest(this);

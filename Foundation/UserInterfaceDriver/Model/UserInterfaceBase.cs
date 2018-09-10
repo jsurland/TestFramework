@@ -3,8 +3,8 @@ using NUnit.Framework;
 
 namespace Foundation.UserInterfaceSupport.Model
 {
-    [TestFixture(Constants.BrowserType.FireFox, Constants.OperatingSystem.Windows, Description = "FireFox", Category = "Windows")]
-//    [TestFixture(Constants.BrowserType.Chrome, Constants.OperatingSystem.Windows, Description = "Chrome", Category = "Windows")]
+    [TestFixture(Constants.BrowserType.FireFox, Constants.OperatingSystem.Windows, Description = "FireFox", Category = "Windows10")]
+    //[TestFixture(Constants.BrowserType.Chrome, Constants.OperatingSystem.Windows, Description = "Chrome", Category = "Windows")]
 
     //    [TestFixture(BrowserType.Edge, OsType.Windows10, Description = "Edge", Category = "Windows")]
     // Internet Explorer requires special configuration.
