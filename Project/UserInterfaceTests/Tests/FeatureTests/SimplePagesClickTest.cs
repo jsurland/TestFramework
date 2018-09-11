@@ -11,8 +11,8 @@ namespace Project.UserInterfaceTests.Tests.FeatureTests
     {
         private PageNavigationService _navigationService;
 
-        public SimplePagesClickTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem, 
-            SimplePagesClickTest simplePagesClickTest) : base(browserType, operatingSystem)
+        public SimplePagesClickTest(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, 
+            Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(browserType, operatingSystem)
         {
             // The constructor is not a good place to do much.
             // Mostly becuase the WebDriver reference is null, at this time.

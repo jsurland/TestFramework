@@ -12,8 +12,8 @@ namespace Project.UserInterfaceTests.Tests.FeatureTests
     {
         private CustomerSupportService _customerSupportService;
 
-        protected DuplicateThisFile(Foundation.UserInterfaceSupport.Constants.BrowserType browser, 
-            Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(browser, operatingSystem)
+        public DuplicateThisFile(Foundation.UserInterfaceSupport.Constants.BrowserType browserType, 
+            Foundation.UserInterfaceSupport.Constants.OperatingSystem operatingSystem) : base(browserType, operatingSystem)
         {
             // The constructor is not a good place to do much.
             // Mostly becuase the WebDriver reference is null, at this time.
