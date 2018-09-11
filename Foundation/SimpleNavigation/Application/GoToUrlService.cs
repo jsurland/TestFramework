@@ -5,11 +5,11 @@ using OpenQA.Selenium;
 
 namespace Foundation.SimpleNavigation.Application
 {
-    internal class SimpleNavigationService: BaseTestPageObjects
+    internal class GoToUrlService: BaseTestPageObjects
     {
         private readonly UserInterfaceBase _userInterface;
 
-        internal SimpleNavigationService(UserInterfaceBase userInterface) : base(userInterface.WebDriver)
+        internal GoToUrlService(UserInterfaceBase userInterface) : base(userInterface.WebDriver)
         {
             _userInterface = userInterface;
         }
@@ -31,7 +31,5 @@ namespace Foundation.SimpleNavigation.Application
             _userInterface.WebDriver.Navigate().GoToUrl(url);
             _userInterface.DefaultWait.Until(e => waitForElement.Enabled);
         }
-
-
     }
 }

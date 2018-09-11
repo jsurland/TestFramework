@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\PageNavigationService.cs" />
-    <Compile Include="Application\SimpleNavigationService.cs" />
+    <Compile Include="Application\GoToUrlService.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Model\PageObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

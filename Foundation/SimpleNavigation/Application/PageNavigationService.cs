@@ -15,12 +15,12 @@ namespace Foundation.SimpleNavigation.Application
     public class PageNavigationService : PageObjects
     {
         private readonly UserInterfaceBase _userInterface;
-        private readonly SimpleNavigationService _simplePageNavigation;
+        private readonly GoToUrlService _simplePageNavigation;
 
         public PageNavigationService(UserInterfaceBase userInterface) : base(userInterface.WebDriver)
         {
             _userInterface = userInterface;
-            _simplePageNavigation = new SimpleNavigationService(_userInterface);
+            _simplePageNavigation = new GoToUrlService(_userInterface);
         }
 
         public void GotoFrontPage()
@@ -30,7 +30,7 @@ namespace Foundation.SimpleNavigation.Application
 
         public void GotoLottoPage()
         {
-            _simplePageNavigation.GoToUrlAndWaitUntilReady(Constants.Urls.FrontPageUrl, FrontPage);
+            _simplePageNavigation.GoToUrlAndWaitUntilReady(Constants.Urls.LottoFrontPageUrl, LottoFrontPage);
         }
     }
 }

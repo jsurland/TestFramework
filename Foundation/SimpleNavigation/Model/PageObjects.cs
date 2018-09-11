@@ -20,6 +20,10 @@ namespace Feature.CustomerSupport.Model
         [CacheLookup]
         protected IWebElement FrontPage { get; set; }
 
+        [FindsBy(How = How.CssSelector, Using = ".region-lotto")]
+        [CacheLookup]
+        protected IWebElement LottoFrontPage { get; set; }
+
         // Use 'By' when PageObjects are not possible - depends on how you need to write the test
         //protected By SearchResultList = By.CssSelector(".searchresult .link-list li");
     }
